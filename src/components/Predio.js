@@ -1,6 +1,7 @@
 import React from 'react';
 import Janela from './Janela';
 import Porta from './Porta';
+import Interruptor from './Interruptor';
 
 export default class Predio extends React.Component {
 
@@ -62,7 +63,7 @@ export default class Predio extends React.Component {
 
                 <Porta style={this.state.stylePorta}/>
 
-                <div onClick={this.togglAllLights} style={{backgroundColor: 'black'}}></div>
+                <Interruptor onClick={this.togglAllLights} style={{width: '25%', height: '33%', marginTop: '4vh', marginLeft: '7vw'}} />
             </div>
         );
     }
